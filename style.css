@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  flex-direction: column;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.count,
+.clock {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text span {
+  padding: 20px;
+  background: #555;
+  display: inline-block;
+  flex: 1 0 150px;
+  text-align: center;
+}
+
+.count span,
+.clock span {
+  padding: 20px;
+  background: #555;
+  display: inline-block;
+  flex: 1 0 150px;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .count,
+  .clock {
+    font-size: 2rem;;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .text {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+
+  .text span {
+    padding: 20px;
+    flex: 1 0 100px;
+  }
+
+  .count span,
+  .clock span {
+    padding: 20px;
+    flex: 1 0 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .count,
+  .clock {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  .text span {
+    padding: 10px;
+    flex: 1 0 50px;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .count span,
+  .clock span {
+    padding: 10px; 
+    flex: 1 0 50px;
+  }
+}
